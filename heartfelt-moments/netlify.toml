@@ -1,7 +1,7 @@
 [build]
   # Ensure a clean install then build so Nitro's prebuild runs reliably on Netlify
   command = "npm ci && npm run build"
-  publish = ".output/public"
+  publish = "dist"
 
 [functions]
   # No serverless functions required; this is a static prebuilt deploy.
