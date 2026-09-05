@@ -1,0 +1,9 @@
+[build]
+  base = "heartfelt-moments"
+  command = "npm ci && npm run build"
+  publish = "heartfelt-moments/.output/public"
+
+[context]
+  # Ensure Netlify knows this repo contains a subfolder project.
+  # This file ensures the build runs inside `heartfelt-moments` and publishes
+  # the Nitro prebuilt output produced at `.output/public`.
